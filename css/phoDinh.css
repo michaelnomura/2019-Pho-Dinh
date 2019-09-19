@@ -1,0 +1,181 @@
+/* PHO DINH styles! */
+
+
+html,body {
+    background-color:#34DDDD;
+    margin:0;
+    padding:0;
+    font-family: sans-serif, helvetica;
+}
+
+#wrapper {
+    background-color:#fff;
+    padding:0 1em 2em 1em;
+    width:80%;
+    max-width:1280px;
+    margin:auto;
+    height: 100%;
+}
+
+h1 {
+    margin:0 1em .5em 0; 
+    padding-top:1em;
+    text-decoration: none;
+    font-family: 'Molle', cursive;
+}
+
+h2 {
+    font-family: 'Molle', cursive;
+}
+
+a.titleBar {
+        text-decoration: none;
+    color: #000;
+}
+
+a.titleBar:visited {
+    color: #000;
+}
+
+h1#title {
+    text-align: center;
+    display:block;
+
+}
+
+a#logo {
+    text-decoration: none;
+    color:#000
+}
+
+
+
+div.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+
+div.embed-container iframe { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index:0;
+    border:0;
+}
+
+section {
+    float:left;
+    width:66%;
+}
+
+aside {
+    float:right;
+    width:33%;
+}
+
+
+/*start jquery css*/
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+/*end jquery css*/
+
+figure {
+    display:inline-block;
+    width:32.7%;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+figure img {
+    width:100%;
+}
+
+
+footer {
+    padding-top: 70px;
+    text-align:center;
+    clear:both; /* clears floated elements that occur before it */
+
+}
+
+div#cta {
+    margin-top: 2em;
+    }
+
+
+
+/* MOBILE */
+
+
+@media all and (max-width:720px) {
+    html,body {
+        background-color:#89E894; 
+    }
+   
+    #wrapper {
+        width:100%; 
+        padding:0 0em 2em 0em;
+    }
+
+/*Controll padding for title and content*/
+
+    div#title,
+    div#content,
+    div#side    {
+        padding: 1em;
+    }
+
+    iframe.mobile {
+        width: 100%;
+    }
+    table.desktop {
+        display: none;
+    }
+    section, aside {
+        float:none;
+        width:100%;
+    }
+    
+
+    
+    figure {
+        display:block;
+        width:100%;
+    }
+}
+
+div#cta {
+    margin-top: 2em;
+    }
+
+
+/* CTA Images */
+@media all and (max-width:320px) {
+
+figure {
+    display:block;
+    width:100%;
+    }
+    
+div#cta {
+    margin-top: 2em;
+    }
+}
+
+
