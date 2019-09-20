@@ -1,6 +1,6 @@
 <?php include 'includes/header.php';?>
-<section>
-    <div id='content'>
+<section class="full-height">
+    <div id='wrapper-left'>
     <h2><?=$myPageID?></h2>
     <?php
     /*
@@ -24,7 +24,7 @@
 <!--Start Aside-->   
 <aside>
     <div id='side'>
-    <p>Monthly Specials!</p>
+    <h2>Monthly Specials!</h2>
     <img src='images/phoSoup.jpg' alt='Beef Pho' style="width:100%">
     </div>
     </aside>

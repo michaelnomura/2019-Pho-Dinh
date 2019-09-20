@@ -1,8 +1,7 @@
 <?php include 'includes/header.php';?>
-
 <!--Start Left--> 
-<section>
-    <div id='content'>
+<section>   
+    <div id='wrapper-left'>
     <h2><?=$myPageID?></h2>
     <table class='desktop'>
         <tr>
@@ -170,9 +169,8 @@
             </td>
             </tr>     
             </table>
-        </div>    
-        </section>
-    
+        </div>          
+    </section>
 <!--Start Right-->   
         <aside>
         <div id='side'>
@@ -180,6 +178,5 @@
         <img src='images/phoSoup.jpg' alt='Beef Pho' style="width:100%">
         </div>
     </aside>
-
 <!--Start Footer-->
 <?php include 'includes/footer.php';?>

@@ -9,7 +9,7 @@ you need to include this config.php file at the top your 'header.php' page.  Als
 date_default_timezone_set('America/Los_Angeles');
 
 // Keys for SCC's server, edison.seattlecentral.edu, go on the next line
-include 'credentials.php'
+include 'credentials.php';
 
 //place URL & labels in the variable/array here for navigation:
 $nav1['index.php'] = "Main";

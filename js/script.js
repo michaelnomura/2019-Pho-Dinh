@@ -40,5 +40,23 @@ $("#cssmenu > ul > li").hover(function() {
   menuLine.css("width", defaultWidth);
 });
 
+    $('.full-bg-img').css({
+        height: $(window).innerHeight()
+    });
+    $(window).resize(function(){ // add resize() to adjust to browser
+        $('.full-bg-img').css({
+            height: $(window).innerHeight()
+        });
+    });
+    
+    $('.full-height').css({
+        height: $(window).innerHeight()
+    });
+    $(window).resize(function(){ // add resize() to adjust to browser
+        $('.full-height').css({
+            height: $(window).innerHeight()
+        });
+    });
+    
 });
 })(jQuery);

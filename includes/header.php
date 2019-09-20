@@ -20,8 +20,7 @@
     <link href="https://fonts.googleapis.com/css?family=Molle:400i" rel="stylesheet"> 
 </head>    
 
-<body>
-    <div id="wrapper">          
+<body>         
     <header>
     <a class="titleBar" href="index.php"><h1 id='title'>&nbsp;&nbsp;Pho Dinh</h1></a>        
     <nav id="cssmenu" class='align-center'>
@@ -29,6 +28,5 @@
         <ul>
         <?=makeLinks($nav1)?>
       </ul>
-
     </nav>
     </header>

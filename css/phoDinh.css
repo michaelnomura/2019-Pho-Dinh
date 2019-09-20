@@ -1,20 +1,55 @@
 /* PHO DINH styles! */
-
+* {
+    margin: 0;
+    padding: 0;
+}
 
 html,body {
-    background-color:#34DDDD;
+    
+    background-color: #fff;
     margin:0;
     padding:0;
     font-family: sans-serif, helvetica;
 }
 
+header {
+    background-color:#34DDDD;
+}
+
 #wrapper {
-    background-color:#fff;
     padding:0 1em 2em 1em;
     width:80%;
     max-width:1280px;
     margin:auto;
     height: 100%;
+    text-align: center;
+    color: #fff
+}
+
+#wrapper-title {
+    padding:0 1em 2em 1em;
+    width:80%;
+    max-width:1280px;
+    margin:auto;
+    height: 100%;
+    text-align: center;
+    color: #fff
+}
+
+#wrapper-title h2 {
+    font-size: 1000%;
+}
+
+#wrapper-left {
+    background-color:#fff;
+    padding:2em 1em 2em 12em;
+    max-width:1280px;
+    margin:auto;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
 }
 
 h1 {
@@ -28,6 +63,7 @@ h2 {
     font-family: 'Molle', cursive;
 }
 
+/*nav styles+++++++++++*/ 
 a.titleBar {
         text-decoration: none;
     color: #000;
@@ -47,8 +83,23 @@ a#logo {
     text-decoration: none;
     color:#000
 }
+/*end nav styles+++++++++++*/
 
+.spacer-title {
+    height: 200px;
+}
 
+/*format ++++++++++*/
+section {
+    float:left;
+    width:66%;
+}
+
+aside {
+    float:right;
+    width:33%; 
+    padding:2em 1em 2em 0;
+}
 
 div.embed-container { 
     position: relative; 
@@ -68,14 +119,11 @@ div.embed-container iframe {
     border:0;
 }
 
-section {
-    float:left;
-    width:66%;
-}
 
-aside {
-    float:right;
-    width:33%;
+
+.full-bg-img {
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -108,18 +156,27 @@ figure img {
 
 
 footer {
-    padding-top: 70px;
+    padding: 1em;
     text-align:center;
     clear:both; /* clears floated elements that occur before it */
-
+    color: #f00;
 }
 
-div#cta {
-    margin-top: 2em;
+.footer a {
+    color: #f00;
+}
+
+.footer a:visited {
+    color: #f00;
+}
+
+/* MOBILE */
+@media all and (max-width:1680px) {
+    section, aside {
+        float:none;
+        width:100%;
     }
-
-
-
+}
 /* MOBILE */
 
 
@@ -144,25 +201,24 @@ div#cta {
     iframe.mobile {
         width: 100%;
     }
+/*
     table.desktop {
         display: none;
     }
+*/
+    
+/*
     section, aside {
         float:none;
         width:100%;
     }
-    
-
-    
+*/
+   
     figure {
         display:block;
         width:100%;
     }
 }
-
-div#cta {
-    margin-top: 2em;
-    }
 
 
 /* CTA Images */
@@ -173,9 +229,7 @@ figure {
     width:100%;
     }
     
-div#cta {
-    margin-top: 2em;
-    }
+
 }
 
 
