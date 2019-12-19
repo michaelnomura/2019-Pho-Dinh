@@ -58,23 +58,23 @@ if ($response != null && $response->success)
 	<form action="<?php echo basename($_SERVER['PHP_SELF']); ?>" method="post">
 	<div>
 		<label>
-			Name:<br /><input type="text" name="Name" required="required" placeholder="Full Name (required)" title="Name is required" tabindex="10" size="44" autofocus />
+			Name:<br /><input type="text" name="Name" required="required" placeholder="Full Name (required)" title="Name is required" tabindex="10" class="form-control"/>
 		</label>
 	</div>
 	<div>	
 		<label>
-			Email:<br /><input type="email" name="Email" required="required" placeholder="Email (required)" title="A valid email is required" tabindex="20" size="44" />
+			Email:<br /><input type="email" name="Email" required="required" placeholder="Email (required)" title="A valid email is required" tabindex="20" class="form-control"/>
 		</label>
 	</div>
 	<!-- below change the HTML to your form elements - only 'Name' & 'Email' (above) are significant -->
 	<div>	
 		<label>
-			Comments:<br /><textarea name="Comments" cols="36" rows="4" placeholder="Comments " tabindex="30"></textarea>
+			Comments:<br /><textarea name="Comments" cols="36" rows="4" placeholder="Comments " class="form-control"></textarea>
 		</label>
 	</div>
         	<div>	
 		<label>
-			Comments:<br /><textarea name="Suggestions" cols="36" rows="4" placeholder="Suggestions" tabindex="30"></textarea>
+			Comments:<br /><textarea name="Suggestions" cols="36" rows="4" placeholder="Suggestions" class="form-control"></textarea>
 		</label>
 	</div>	
 	<div><?=$feedback?></div>
